@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="overviewCell" rowHeight="165" id="xOI-YM-fmh" customClass="HSOverviewTVCell" customModule="_0190417_AfnanMirza_NYCSchools" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xOI-YM-fmh" id="UlZ-qO-RRy">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZP-Iz-mP4">
+                        <rect key="frame" x="20" y="20" width="335" height="124.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLZ-NE-MOl">
+                                <rect key="frame" x="15" y="5" width="60" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7R9-Ux-H0o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
+                                <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwC-p1-G34">
+                                <rect key="frame" x="15" y="38" width="305" height="76.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="15"/>
+                                <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MLZ-NE-MOl" firstAttribute="top" secondItem="nZP-Iz-mP4" secondAttribute="top" constant="5" id="OQt-FT-T8I"/>
+                            <constraint firstItem="MLZ-NE-MOl" firstAttribute="leading" secondItem="nZP-Iz-mP4" secondAttribute="leading" constant="15" id="ROv-Ay-HNg"/>
+                            <constraint firstItem="JwC-p1-G34" firstAttribute="top" secondItem="MLZ-NE-MOl" secondAttribute="bottom" constant="8" id="Tgm-34-vCu"/>
+                            <constraint firstAttribute="trailing" secondItem="JwC-p1-G34" secondAttribute="trailing" constant="15" id="ce6-Nn-XAP"/>
+                            <constraint firstAttribute="bottom" secondItem="JwC-p1-G34" secondAttribute="bottom" constant="10" id="i7B-Vo-jgR"/>
+                            <constraint firstItem="JwC-p1-G34" firstAttribute="leading" secondItem="nZP-Iz-mP4" secondAttribute="leading" constant="15" id="isQ-xK-ydZ"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="MLZ-NE-MOl" secondAttribute="trailing" constant="267" id="w37-E6-7O3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nZP-Iz-mP4" firstAttribute="leading" secondItem="UlZ-qO-RRy" secondAttribute="leading" constant="20" id="KX0-hw-OnC"/>
+                    <constraint firstAttribute="bottom" secondItem="nZP-Iz-mP4" secondAttribute="bottom" constant="20" id="T7y-wm-FGO"/>
+                    <constraint firstItem="nZP-Iz-mP4" firstAttribute="top" secondItem="UlZ-qO-RRy" secondAttribute="top" constant="20" id="k5j-bY-Ya3"/>
+                    <constraint firstAttribute="trailing" secondItem="nZP-Iz-mP4" secondAttribute="trailing" constant="20" id="nOQ-BW-ItX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+            <connections>
+                <outlet property="cardView" destination="nZP-Iz-mP4" id="pVx-tu-SKh"/>
+                <outlet property="overViewLbl" destination="JwC-p1-G34" id="inD-bo-mbd"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -8,8 +8,26 @@
 
 import UIKit
 
-enum xibCellNames: String {
+enum XIBCellNames: String {
     case highSchoolTVCell
+    
+    enum Details: String {
+        case HSSATScoresTVCell
+        case HSOverviewTVCell
+        case HSContactTVCell
+        case HSMapTVCell
+    }
+}
+
+enum CellIdentifiers: String {
+    case hsCell
+    
+    enum DetailsCellIdentifiers: String {
+        case satScoresCell
+        case overviewCell
+        case contactCell
+        case mapCell
+    }
 }
 
 class NYCHighSchoolVC: UIViewController {
@@ -17,7 +35,6 @@ class NYCHighSchoolVC: UIViewController {
     // MARK: - Properties
     @IBOutlet var tableView: UITableView!
     
-    let cellIdentifier: String = "hsCell"
     let viewModel: NYCHighSchoolsViewModel = NYCHighSchoolsViewModel()
     
     // MARK: - Life Cycle
@@ -54,8 +71,8 @@ class NYCHighSchoolVC: UIViewController {
     func setupTableView() {
         self.tableView.tableFooterView = UIView()
         
-        let highSchoolTVCellNib = UINib(nibName: xibCellNames.highSchoolTVCell.rawValue, bundle: nil)
-        self.tableView.register(highSchoolTVCellNib, forCellReuseIdentifier: cellIdentifier)
+        let highSchoolTVCellNib = UINib(nibName: XIBCellNames.highSchoolTVCell.rawValue, bundle: nil)
+        self.tableView.register(highSchoolTVCellNib, forCellReuseIdentifier: CellIdentifiers.hsCell.rawValue)
     }
     
 }
@@ -66,7 +83,7 @@ extension NYCHighSchoolVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: highSchoolTVCell = self.tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! highSchoolTVCell
+        let cell: highSchoolTVCell = self.tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.hsCell.rawValue, for: indexPath) as! highSchoolTVCell
         viewModel.configureCell(cell: cell, indexPath: indexPath)
         return cell
     }

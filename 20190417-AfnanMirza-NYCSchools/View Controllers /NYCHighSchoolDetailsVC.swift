@@ -10,16 +10,17 @@ import UIKit
 
 class NYCHighSchoolDetailsVC: UIViewController {
     
+    // MARK: - Properties
     @IBOutlet var cancelBtn: UIBarButtonItem!
     @IBOutlet var tableView: UITableView!
     
     let viewModel: NYCHighSchoolsDetailsViewModel = NYCHighSchoolsDetailsViewModel()
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let highSchoolTVCellNib = UINib(nibName: xibCellNames.highSchoolTVCell.rawValue, bundle: nil)
-        self.tableView.register(highSchoolTVCellNib, forCellReuseIdentifier: "hsCell")
+        viewModel.registerCells(with: self.tableView)
     }
     
     @IBAction func cancelAction(_ sender: Any) {
@@ -27,14 +28,18 @@ class NYCHighSchoolDetailsVC: UIViewController {
     }
 }
 
+// MARK: - UITableViewDataSource & UITableViewDelegate
 extension NYCHighSchoolDetailsVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return viewModel.getNumberOfRows()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: highSchoolTVCell = self.tableView.dequeueReusableCell(withIdentifier: "hsCell", for: indexPath) as! highSchoolTVCell
-        cell.schoolNameLbl.text = viewModel.nycSchools?.schoolName!
-        return cell
+        return viewModel.configureCell(at: indexPath, tableView: self.tableView)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return viewModel.heightForRow(at: indexPath)
     }
 }
+

@@ -64,8 +64,7 @@ class NYCHighSchoolsViewModel {
             }, failure: failure)
         }
     }
-    
-    
+
     func getNumberOfRows() -> Int {
         if isFiltering() {
             return filteredNycHSList.count

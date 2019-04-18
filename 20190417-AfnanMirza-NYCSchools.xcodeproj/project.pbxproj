@@ -15,6 +15,12 @@
 		CF8A821C2268357400280305 /* NYCHighSchoolsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A821B2268357400280305 /* NYCHighSchoolsDetailsViewModel.swift */; };
 		CF8A8220226838DC00280305 /* HSSATScoresTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A821E226838DC00280305 /* HSSATScoresTVCell.swift */; };
 		CF8A8221226838DC00280305 /* HSSATScoresTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8A821F226838DC00280305 /* HSSATScoresTVCell.xib */; };
+		CF8A82262268436C00280305 /* HSOverviewTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A82242268436C00280305 /* HSOverviewTVCell.swift */; };
+		CF8A82272268436C00280305 /* HSOverviewTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8A82252268436C00280305 /* HSOverviewTVCell.xib */; };
+		CF8A822B226845DB00280305 /* HSContactTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A8229226845DB00280305 /* HSContactTVCell.swift */; };
+		CF8A822C226845DB00280305 /* HSContactTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8A822A226845DB00280305 /* HSContactTVCell.xib */; };
+		CF8A82302268482400280305 /* HSMapTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A822E2268482400280305 /* HSMapTVCell.swift */; };
+		CF8A82312268482400280305 /* HSMapTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8A822F2268482400280305 /* HSMapTVCell.xib */; };
 		CFE9674C2267FBDF00D2C715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9674B2267FBDF00D2C715 /* AppDelegate.swift */; };
 		CFE9674E2267FBDF00D2C715 /* NYCHighSchoolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9674D2267FBDF00D2C715 /* NYCHighSchoolVC.swift */; };
 		CFE967512267FBDF00D2C715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE9674F2267FBDF00D2C715 /* Main.storyboard */; };
@@ -33,6 +39,12 @@
 		CF8A821B2268357400280305 /* NYCHighSchoolsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolsDetailsViewModel.swift; sourceTree = "<group>"; };
 		CF8A821E226838DC00280305 /* HSSATScoresTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSSATScoresTVCell.swift; sourceTree = "<group>"; };
 		CF8A821F226838DC00280305 /* HSSATScoresTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSSATScoresTVCell.xib; sourceTree = "<group>"; };
+		CF8A82242268436C00280305 /* HSOverviewTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSOverviewTVCell.swift; sourceTree = "<group>"; };
+		CF8A82252268436C00280305 /* HSOverviewTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSOverviewTVCell.xib; sourceTree = "<group>"; };
+		CF8A8229226845DB00280305 /* HSContactTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSContactTVCell.swift; sourceTree = "<group>"; };
+		CF8A822A226845DB00280305 /* HSContactTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSContactTVCell.xib; sourceTree = "<group>"; };
+		CF8A822E2268482400280305 /* HSMapTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSMapTVCell.swift; sourceTree = "<group>"; };
+		CF8A822F2268482400280305 /* HSMapTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSMapTVCell.xib; sourceTree = "<group>"; };
 		CFE967482267FBDF00D2C715 /* 20190417-AfnanMirza-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20190417-AfnanMirza-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE9674B2267FBDF00D2C715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFE9674D2267FBDF00D2C715 /* NYCHighSchoolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolVC.swift; sourceTree = "<group>"; };
@@ -92,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				CF8A8222226838E000280305 /* SAT Scores Cell */,
+				CF8A82232268434800280305 /* Overview Cell */,
+				CF8A8228226845C100280305 /* Contact Cell */,
+				CF8A822D226847FA00280305 /* Map Cell */,
 			);
 			path = "Detail Cells";
 			sourceTree = "<group>";
@@ -103,6 +118,33 @@
 				CF8A821F226838DC00280305 /* HSSATScoresTVCell.xib */,
 			);
 			path = "SAT Scores Cell";
+			sourceTree = "<group>";
+		};
+		CF8A82232268434800280305 /* Overview Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF8A82242268436C00280305 /* HSOverviewTVCell.swift */,
+				CF8A82252268436C00280305 /* HSOverviewTVCell.xib */,
+			);
+			path = "Overview Cell";
+			sourceTree = "<group>";
+		};
+		CF8A8228226845C100280305 /* Contact Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF8A8229226845DB00280305 /* HSContactTVCell.swift */,
+				CF8A822A226845DB00280305 /* HSContactTVCell.xib */,
+			);
+			path = "Contact Cell";
+			sourceTree = "<group>";
+		};
+		CF8A822D226847FA00280305 /* Map Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF8A822E2268482400280305 /* HSMapTVCell.swift */,
+				CF8A822F2268482400280305 /* HSMapTVCell.xib */,
+			);
+			path = "Map Cell";
 			sourceTree = "<group>";
 		};
 		CFE9673F2267FBDF00D2C715 = {
@@ -248,11 +290,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8A822C226845DB00280305 /* HSContactTVCell.xib in Resources */,
 				CFE967562267FBE000D2C715 /* LaunchScreen.storyboard in Resources */,
 				CFE967532267FBE000D2C715 /* Assets.xcassets in Resources */,
+				CF8A82312268482400280305 /* HSMapTVCell.xib in Resources */,
 				CFE967512267FBDF00D2C715 /* Main.storyboard in Resources */,
 				CF8A8221226838DC00280305 /* HSSATScoresTVCell.xib in Resources */,
 				CFE967672268058500D2C715 /* highSchoolTVCell.xib in Resources */,
+				CF8A82272268436C00280305 /* HSOverviewTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8A82302268482400280305 /* HSMapTVCell.swift in Sources */,
 				CF8A821A2268355600280305 /* NYCHighSchoolDetailsVC.swift in Sources */,
 				CF8A821222681E5A00280305 /* BackendAPI.swift in Sources */,
 				CF8A82152268233C00280305 /* NYCHighSchoolsViewModel.swift in Sources */,
@@ -270,7 +316,9 @@
 				CFE9674E2267FBDF00D2C715 /* NYCHighSchoolVC.swift in Sources */,
 				CFE967662268058500D2C715 /* highSchoolTVCell.swift in Sources */,
 				CFE9674C2267FBDF00D2C715 /* AppDelegate.swift in Sources */,
+				CF8A82262268436C00280305 /* HSOverviewTVCell.swift in Sources */,
 				CF8A82182268293100280305 /* Extensions.swift in Sources */,
+				CF8A822B226845DB00280305 /* HSContactTVCell.swift in Sources */,
 				CF8A8220226838DC00280305 /* HSSATScoresTVCell.swift in Sources */,
 				CF8A821C2268357400280305 /* NYCHighSchoolsDetailsViewModel.swift in Sources */,
 			);

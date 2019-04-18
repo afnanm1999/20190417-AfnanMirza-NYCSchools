@@ -1,5 +1,5 @@
 //
-//  HSSATScoresTVCell.swift
+//  HSOverviewTVCell.swift
 //  20190417-AfnanMirza-NYCSchools
 //
 //  Created by Afnan Mirza on 4/18/19.
@@ -8,17 +8,13 @@
 
 import UIKit
 
-class HSSATScoresTVCell: UITableViewCell {
+class HSOverviewTVCell: UITableViewCell {
     
     @IBOutlet var cardView: UIView!
-    @IBOutlet var schoolNameLbl: UILabel!
-    @IBOutlet var satReadingScoreLbl: UILabel!
-    @IBOutlet var satMathScoreLbl: UILabel!
-    @IBOutlet var satWritingScoreLbl: UILabel!
+    @IBOutlet var overViewLbl: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         cardView.setupCardViewShadows()
     }
     
