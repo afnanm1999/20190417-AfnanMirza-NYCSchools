@@ -10,6 +10,34 @@ import Foundation
 import UIKit
 import MapKit
 
+enum XIBCellNames: String {
+    case highSchoolTVCell
+    
+    enum Details: String {
+        case HSSATScoresTVCell
+        case HSOverviewTVCell
+        case HSContactTVCell
+        case HSMapTVCell
+    }
+}
+
+enum CellIdentifiers: String {
+    case hsCell
+    
+    enum DetailsCellIdentifiers: String {
+        case satScoresCell
+        case overviewCell
+        case contactCell
+        case mapCell
+    }
+}
+
+enum ContactLabelTypes: String {
+    case address
+    case phoneNumber
+    case website
+}
+
 extension String {
     func slice(from: String, to: String) -> String? {
         return (range(of: from)?.upperBound).flatMap { substringFrom in
@@ -53,3 +81,4 @@ extension UIView {
         view.layer.masksToBounds = false
     }
 }
+

@@ -8,28 +8,6 @@
 
 import UIKit
 
-enum XIBCellNames: String {
-    case highSchoolTVCell
-    
-    enum Details: String {
-        case HSSATScoresTVCell
-        case HSOverviewTVCell
-        case HSContactTVCell
-        case HSMapTVCell
-    }
-}
-
-enum CellIdentifiers: String {
-    case hsCell
-    
-    enum DetailsCellIdentifiers: String {
-        case satScoresCell
-        case overviewCell
-        case contactCell
-        case mapCell
-    }
-}
-
 class NYCHighSchoolVC: UIViewController {
     
     // MARK: - Properties
@@ -41,8 +19,9 @@ class NYCHighSchoolVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupSearchController()
-        setupTableView()
+        viewModel.setupSearchController(vc: self, navigationItem: self.navigationItem)
+        viewModel.setupTableView(tableView: self.tableView)
+        viewModel.searchController.searchResultsUpdater = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,25 +35,6 @@ class NYCHighSchoolVC: UIViewController {
             }
         }
     }
-    
-    // MARK: - Functions
-    func setupSearchController(){
-        let searchController = viewModel.searchController
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search Schools"
-        searchController.searchBar.tintColor = UIColor.white
-        navigationItem.searchController = searchController
-        definesPresentationContext = true
-    }
-    
-    func setupTableView() {
-        self.tableView.tableFooterView = UIView()
-        
-        let highSchoolTVCellNib = UINib(nibName: XIBCellNames.highSchoolTVCell.rawValue, bundle: nil)
-        self.tableView.register(highSchoolTVCellNib, forCellReuseIdentifier: CellIdentifiers.hsCell.rawValue)
-    }
-    
 }
 
 extension NYCHighSchoolVC: UITableViewDataSource, UITableViewDelegate {
@@ -83,13 +43,12 @@ extension NYCHighSchoolVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: highSchoolTVCell = self.tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.hsCell.rawValue, for: indexPath) as! highSchoolTVCell
-        viewModel.configureCell(cell: cell, indexPath: indexPath)
-        return cell
+        return viewModel.tableViewHighSchoolBasicCell(tableView: tableView, indexPath: indexPath)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         if let detailsNavigationController = storyboard.instantiateViewController(withIdentifier: "detailsVC") as? UINavigationController {
             if let detailsVC = detailsNavigationController.viewControllers.first as? NYCHighSchoolDetailsVC {
                 detailsVC.viewModel.nycSchools = viewModel.getObject(at: indexPath)
@@ -107,4 +66,10 @@ extension NYCHighSchoolVC: UISearchResultsUpdating {
             self.tableView.reloadData()
         }
     }
+}
+
+class NYCHighSchoolsTapLabelGesture: UITapGestureRecognizer {
+    var url: String?
+    var type: ContactLabelTypes?
+    
 }

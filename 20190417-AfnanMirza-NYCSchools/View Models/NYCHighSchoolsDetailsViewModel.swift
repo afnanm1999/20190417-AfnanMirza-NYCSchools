@@ -117,7 +117,8 @@ class NYCHighSchoolsDetailsViewModel {
         
         schoolWithContactCell.addressLbl.text = "Address: " + maindata.schoolAddress!.getCompleteAddressWithoutCoordinate()
         schoolWithContactCell.phoneLbl.text = (maindata.schoolTelephoneNumber != nil) ? "Tel: " + maindata.schoolTelephoneNumber! : ""
-        schoolWithContactCell.websiteLbl.text = maindata.schoolWebsite
+        schoolWithContactCell.websiteLbl.text = (maindata.schoolWebsite != nil) ? "Website: " + maindata.schoolWebsite! : ""
+        schoolWithContactCell.setupGestures()
         
         return schoolWithContactCell
     }

@@ -17,9 +17,10 @@ enum APIUrls: String {
 }
 
 class BackendAPI {
-    
     static func fetchNYCHighSchoolInfo(success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
         guard let highSchoolsURL = URL(string: APIUrls.highSchoolInfoUrl.rawValue) else {
+            let error = NSError(domain: "urlIsNil", code: 2413, userInfo: [NSLocalizedDescriptionKey: "High School SAT URL is Nil."])
+            failure(error)
             return
         }
         
@@ -39,6 +40,8 @@ class BackendAPI {
     
     static func fetchNYCHighSchoolSATInfo(success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
         guard let highSchoolsSATURL = URL(string: APIUrls.highSchoolSATInfoUrl.rawValue) else {
+            let error = NSError(domain: "urlIsNil", code: 2413, userInfo: [NSLocalizedDescriptionKey: "High School SAT URL is Nil."])
+            failure(error)
             return
         }
         

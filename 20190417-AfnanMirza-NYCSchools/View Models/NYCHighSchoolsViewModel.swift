@@ -24,6 +24,22 @@ class NYCHighSchoolsViewModel {
     }
     
     // MARK: - Functions / Methods
+    func setupTableView(tableView: UITableView) {
+        tableView.tableFooterView = UIView()
+        
+        let highSchoolTVCellNib = UINib(nibName: XIBCellNames.highSchoolTVCell.rawValue, bundle: nil)
+        tableView.register(highSchoolTVCellNib, forCellReuseIdentifier: CellIdentifiers.hsCell.rawValue)
+    }
+    
+    func setupSearchController(vc: UIViewController, navigationItem: UINavigationItem){
+        let searchController = self.searchController
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Schools"
+        searchController.searchBar.tintColor = UIColor.white
+        navigationItem.searchController = searchController
+        vc.definesPresentationContext = true
+    }
+    
     func fetchSchoolsInfo(success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
         DispatchQueue.global(qos: .background).async {
             BackendAPI.fetchNYCHighSchoolInfo(success: { (hsObjectArr) in
@@ -81,7 +97,8 @@ class NYCHighSchoolsViewModel {
         return nycSchoolsList[indexPath.row]
     }
     
-    func configureCell(cell: highSchoolTVCell, indexPath: IndexPath) {
+    func tableViewHighSchoolBasicCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        let cell: highSchoolTVCell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.hsCell.rawValue, for: indexPath) as! highSchoolTVCell
         var maindata: NYCHighSchools
         
         if isFiltering() {
@@ -93,6 +110,10 @@ class NYCHighSchoolsViewModel {
         cell.schoolNameLbl.text = maindata.schoolName!
         cell.addressLbl.text = maindata.schoolAddress?.getCompleteAddressWithoutCoordinate()
         cell.websiteLbl.text = maindata.schoolWebsite!
+        
+        cell.setupGestures()
+        
+        return cell
     }
     
     // MARK: - UISearchController Helpers

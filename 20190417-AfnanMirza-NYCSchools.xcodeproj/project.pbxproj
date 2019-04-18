@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF23C4A32269199F006520E8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CF23C4A22269199F006520E8 /* README.md */; };
 		CF8A820F2268192500280305 /* NYCHighSchools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A820E2268192500280305 /* NYCHighSchools.swift */; };
 		CF8A821222681E5A00280305 /* BackendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A821122681E5A00280305 /* BackendAPI.swift */; };
 		CF8A82152268233C00280305 /* NYCHighSchoolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A82142268233C00280305 /* NYCHighSchoolsViewModel.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF23C4A22269199F006520E8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CF8A820E2268192500280305 /* NYCHighSchools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchools.swift; sourceTree = "<group>"; };
 		CF8A821122681E5A00280305 /* BackendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendAPI.swift; sourceTree = "<group>"; };
 		CF8A82142268233C00280305 /* NYCHighSchoolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolsViewModel.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		CF8A82132268232800280305 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				CF8A820D226818FF00280305 /* Models */,
 				CF8A82142268233C00280305 /* NYCHighSchoolsViewModel.swift */,
 				CF8A821B2268357400280305 /* NYCHighSchoolsDetailsViewModel.swift */,
 			);
@@ -150,6 +153,7 @@
 		CFE9673F2267FBDF00D2C715 = {
 			isa = PBXGroup;
 			children = (
+				CF23C4A22269199F006520E8 /* README.md */,
 				CFE9674A2267FBDF00D2C715 /* 20190417-AfnanMirza-NYCSchools */,
 				CFE967492267FBDF00D2C715 /* Products */,
 			);
@@ -166,10 +170,9 @@
 		CFE9674A2267FBDF00D2C715 /* 20190417-AfnanMirza-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
-				CF8A82162268292800280305 /* Extensions */,
 				CFE9675D2267FBF300D2C715 /* Supporting Files */,
+				CF8A82162268292800280305 /* Extensions */,
 				CF8A821022681E2B00280305 /* Networking */,
-				CF8A820D226818FF00280305 /* Models */,
 				CF8A82132268232800280305 /* View Models */,
 				CFE967602267FC1D00D2C715 /* View Controllers  */,
 				CFE9675E2267FC0900D2C715 /* Storyboards */,
@@ -217,8 +220,8 @@
 		CFE967622268055100D2C715 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				CF8A821D226838A900280305 /* Detail Cells */,
 				CFE967632268055500D2C715 /* Home Cell */,
+				CF8A821D226838A900280305 /* Detail Cells */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				CF8A82312268482400280305 /* HSMapTVCell.xib in Resources */,
 				CFE967512267FBDF00D2C715 /* Main.storyboard in Resources */,
 				CF8A8221226838DC00280305 /* HSSATScoresTVCell.xib in Resources */,
+				CF23C4A32269199F006520E8 /* README.md in Resources */,
 				CFE967672268058500D2C715 /* highSchoolTVCell.xib in Resources */,
 				CF8A82272268436C00280305 /* HSOverviewTVCell.xib in Resources */,
 			);

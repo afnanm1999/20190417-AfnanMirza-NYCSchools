@@ -13,7 +13,7 @@ class NYCHighSchools: NSObject {
     var schoolName: String?
     var overviewParagraph: String?
     var schoolAddress: String?
-    var schoolWebsite:String?
+    var schoolWebsite: String?
     var schoolTelephoneNumber: String?
     
     var satCriticalReadingAvgScore: String?
@@ -46,6 +46,7 @@ class NYCHighSchools: NSObject {
         }
     }
     
+    // Separate function because we need to append the SAT info.
     func appendSATData(schoolSATInfoJSON: [String: Any]) {
         if let satReadingScoreObject =  schoolSATInfoJSON["sat_critical_reading_avg_score"] as? String {
             self.satCriticalReadingAvgScore = satReadingScoreObject
