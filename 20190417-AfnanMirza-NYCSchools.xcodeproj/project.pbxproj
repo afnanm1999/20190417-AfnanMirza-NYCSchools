@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CF23C4A32269199F006520E8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CF23C4A22269199F006520E8 /* README.md */; };
+		CF23C4A522691B77006520E8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF23C4A422691B77006520E8 /* logo.png */; };
+		CF23C4AB22691C0F006520E8 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = CF23C4A722691C0F006520E8 /* img1.png */; };
+		CF23C4AC22691C0F006520E8 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF23C4A822691C0F006520E8 /* img2.png */; };
+		CF23C4AD22691C0F006520E8 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = CF23C4A922691C0F006520E8 /* img3.png */; };
+		CF23C4AE22691C0F006520E8 /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = CF23C4AA22691C0F006520E8 /* img4.png */; };
 		CF8A820F2268192500280305 /* NYCHighSchools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A820E2268192500280305 /* NYCHighSchools.swift */; };
 		CF8A821222681E5A00280305 /* BackendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A821122681E5A00280305 /* BackendAPI.swift */; };
 		CF8A82152268233C00280305 /* NYCHighSchoolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A82142268233C00280305 /* NYCHighSchoolsViewModel.swift */; };
@@ -33,6 +38,11 @@
 
 /* Begin PBXFileReference section */
 		CF23C4A22269199F006520E8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CF23C4A422691B77006520E8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		CF23C4A722691C0F006520E8 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		CF23C4A822691C0F006520E8 /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
+		CF23C4A922691C0F006520E8 /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
+		CF23C4AA22691C0F006520E8 /* img4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img4.png; sourceTree = "<group>"; };
 		CF8A820E2268192500280305 /* NYCHighSchools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchools.swift; sourceTree = "<group>"; };
 		CF8A821122681E5A00280305 /* BackendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendAPI.swift; sourceTree = "<group>"; };
 		CF8A82142268233C00280305 /* NYCHighSchoolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolsViewModel.swift; sourceTree = "<group>"; };
@@ -69,6 +79,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF23C4A622691C05006520E8 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				CF23C4A722691C0F006520E8 /* img1.png */,
+				CF23C4A822691C0F006520E8 /* img2.png */,
+				CF23C4A922691C0F006520E8 /* img3.png */,
+				CF23C4AA22691C0F006520E8 /* img4.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		CF8A820D226818FF00280305 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				CF23C4A22269199F006520E8 /* README.md */,
+				CF23C4A622691C05006520E8 /* Screenshots */,
 				CFE9674A2267FBDF00D2C715 /* 20190417-AfnanMirza-NYCSchools */,
 				CFE967492267FBDF00D2C715 /* Products */,
 			);
@@ -185,6 +207,7 @@
 		CFE9675D2267FBF300D2C715 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF23C4A422691B77006520E8 /* logo.png */,
 				CFE9674B2267FBDF00D2C715 /* AppDelegate.swift */,
 				CFE967572267FBE000D2C715 /* Info.plist */,
 			);
@@ -294,13 +317,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF8A822C226845DB00280305 /* HSContactTVCell.xib in Resources */,
+				CF23C4AD22691C0F006520E8 /* img3.png in Resources */,
 				CFE967562267FBE000D2C715 /* LaunchScreen.storyboard in Resources */,
 				CFE967532267FBE000D2C715 /* Assets.xcassets in Resources */,
 				CF8A82312268482400280305 /* HSMapTVCell.xib in Resources */,
 				CFE967512267FBDF00D2C715 /* Main.storyboard in Resources */,
+				CF23C4AE22691C0F006520E8 /* img4.png in Resources */,
 				CF8A8221226838DC00280305 /* HSSATScoresTVCell.xib in Resources */,
+				CF23C4A522691B77006520E8 /* logo.png in Resources */,
 				CF23C4A32269199F006520E8 /* README.md in Resources */,
 				CFE967672268058500D2C715 /* highSchoolTVCell.xib in Resources */,
+				CF23C4AB22691C0F006520E8 /* img1.png in Resources */,
+				CF23C4AC22691C0F006520E8 /* img2.png in Resources */,
 				CF8A82272268436C00280305 /* HSOverviewTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
