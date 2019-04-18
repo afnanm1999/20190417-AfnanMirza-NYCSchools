@@ -1,9 +1,12 @@
 ## 20190417-AfnanMirza-NYCSchools
 
+<img src="https://raw.githubusercontent.com/afnanm1999/20190417-AfnanMirza-NYCSchools/master/20190417-AfnanMirza-NYCSchools/Supporting%20Files/logo.png" width="250">
+
 ### Screenshots
 
-will be added
+<img src="https://raw.githubusercontent.com/afnanm1999/20190417-AfnanMirza-NYCSchools/master/Screenshots/img1.png" width="250"> <img src="https://raw.githubusercontent.com/afnanm1999/20190417-AfnanMirza-NYCSchools/master/Screenshots/img2.png" width="250"> <img src="https://raw.githubusercontent.com/afnanm1999/20190417-AfnanMirza-NYCSchools/master/Screenshots/img3.png" width="250">
 
+<img src="https://raw.githubusercontent.com/afnanm1999/20190417-AfnanMirza-NYCSchools/master/Screenshots/img4.png" width="250"> <img src="https://raw.githubusercontent.com/afnanm1999/20180817-AfnanMirza-NYCSchools/master/Screenshots/img5.png" width="250">
 
 ### Features
 
