@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF8A820F2268192500280305 /* NYCHighSchools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A820E2268192500280305 /* NYCHighSchools.swift */; };
+		CF8A821222681E5A00280305 /* BackendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A821122681E5A00280305 /* BackendAPI.swift */; };
+		CF8A82152268233C00280305 /* NYCHighSchoolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A82142268233C00280305 /* NYCHighSchoolsViewModel.swift */; };
+		CF8A82182268293100280305 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A82172268293100280305 /* Extensions.swift */; };
+		CF8A821A2268355600280305 /* NYCHighSchoolDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A82192268355600280305 /* NYCHighSchoolDetailsVC.swift */; };
+		CF8A821C2268357400280305 /* NYCHighSchoolsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A821B2268357400280305 /* NYCHighSchoolsDetailsViewModel.swift */; };
+		CF8A8220226838DC00280305 /* HSSATScoresTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A821E226838DC00280305 /* HSSATScoresTVCell.swift */; };
+		CF8A8221226838DC00280305 /* HSSATScoresTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8A821F226838DC00280305 /* HSSATScoresTVCell.xib */; };
 		CFE9674C2267FBDF00D2C715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9674B2267FBDF00D2C715 /* AppDelegate.swift */; };
-		CFE9674E2267FBDF00D2C715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9674D2267FBDF00D2C715 /* ViewController.swift */; };
+		CFE9674E2267FBDF00D2C715 /* NYCHighSchoolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9674D2267FBDF00D2C715 /* NYCHighSchoolVC.swift */; };
 		CFE967512267FBDF00D2C715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE9674F2267FBDF00D2C715 /* Main.storyboard */; };
 		CFE967532267FBE000D2C715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE967522267FBE000D2C715 /* Assets.xcassets */; };
 		CFE967562267FBE000D2C715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE967542267FBE000D2C715 /* LaunchScreen.storyboard */; };
+		CFE967662268058500D2C715 /* highSchoolTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE967642268058500D2C715 /* highSchoolTVCell.swift */; };
+		CFE967672268058500D2C715 /* highSchoolTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE967652268058500D2C715 /* highSchoolTVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF8A820E2268192500280305 /* NYCHighSchools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchools.swift; sourceTree = "<group>"; };
+		CF8A821122681E5A00280305 /* BackendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendAPI.swift; sourceTree = "<group>"; };
+		CF8A82142268233C00280305 /* NYCHighSchoolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolsViewModel.swift; sourceTree = "<group>"; };
+		CF8A82172268293100280305 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CF8A82192268355600280305 /* NYCHighSchoolDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolDetailsVC.swift; sourceTree = "<group>"; };
+		CF8A821B2268357400280305 /* NYCHighSchoolsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolsDetailsViewModel.swift; sourceTree = "<group>"; };
+		CF8A821E226838DC00280305 /* HSSATScoresTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSSATScoresTVCell.swift; sourceTree = "<group>"; };
+		CF8A821F226838DC00280305 /* HSSATScoresTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HSSATScoresTVCell.xib; sourceTree = "<group>"; };
 		CFE967482267FBDF00D2C715 /* 20190417-AfnanMirza-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20190417-AfnanMirza-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE9674B2267FBDF00D2C715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFE9674D2267FBDF00D2C715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFE9674D2267FBDF00D2C715 /* NYCHighSchoolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolVC.swift; sourceTree = "<group>"; };
 		CFE967502267FBDF00D2C715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFE967522267FBE000D2C715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFE967552267FBE000D2C715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFE967572267FBE000D2C715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE967642268058500D2C715 /* highSchoolTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highSchoolTVCell.swift; sourceTree = "<group>"; };
+		CFE967652268058500D2C715 /* highSchoolTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = highSchoolTVCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +55,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF8A820D226818FF00280305 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF8A820E2268192500280305 /* NYCHighSchools.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF8A821022681E2B00280305 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CF8A821122681E5A00280305 /* BackendAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CF8A82132268232800280305 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF8A82142268233C00280305 /* NYCHighSchoolsViewModel.swift */,
+				CF8A821B2268357400280305 /* NYCHighSchoolsDetailsViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		CF8A82162268292800280305 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF8A82172268293100280305 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF8A821D226838A900280305 /* Detail Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF8A8222226838E000280305 /* SAT Scores Cell */,
+			);
+			path = "Detail Cells";
+			sourceTree = "<group>";
+		};
+		CF8A8222226838E000280305 /* SAT Scores Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF8A821E226838DC00280305 /* HSSATScoresTVCell.swift */,
+				CF8A821F226838DC00280305 /* HSSATScoresTVCell.xib */,
+			);
+			path = "SAT Scores Cell";
+			sourceTree = "<group>";
+		};
 		CFE9673F2267FBDF00D2C715 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +124,70 @@
 		CFE9674A2267FBDF00D2C715 /* 20190417-AfnanMirza-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
-				CFE9674B2267FBDF00D2C715 /* AppDelegate.swift */,
-				CFE9674D2267FBDF00D2C715 /* ViewController.swift */,
-				CFE9674F2267FBDF00D2C715 /* Main.storyboard */,
-				CFE967522267FBE000D2C715 /* Assets.xcassets */,
-				CFE967542267FBE000D2C715 /* LaunchScreen.storyboard */,
-				CFE967572267FBE000D2C715 /* Info.plist */,
+				CF8A82162268292800280305 /* Extensions */,
+				CFE9675D2267FBF300D2C715 /* Supporting Files */,
+				CF8A821022681E2B00280305 /* Networking */,
+				CF8A820D226818FF00280305 /* Models */,
+				CF8A82132268232800280305 /* View Models */,
+				CFE967602267FC1D00D2C715 /* View Controllers  */,
+				CFE9675E2267FC0900D2C715 /* Storyboards */,
+				CFE967622268055100D2C715 /* Cells */,
+				CFE9675F2267FC1600D2C715 /* Images */,
 			);
 			path = "20190417-AfnanMirza-NYCSchools";
+			sourceTree = "<group>";
+		};
+		CFE9675D2267FBF300D2C715 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9674B2267FBDF00D2C715 /* AppDelegate.swift */,
+				CFE967572267FBE000D2C715 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFE9675E2267FC0900D2C715 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9674F2267FBDF00D2C715 /* Main.storyboard */,
+				CFE967542267FBE000D2C715 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CFE9675F2267FC1600D2C715 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CFE967522267FBE000D2C715 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		CFE967602267FC1D00D2C715 /* View Controllers  */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9674D2267FBDF00D2C715 /* NYCHighSchoolVC.swift */,
+				CF8A82192268355600280305 /* NYCHighSchoolDetailsVC.swift */,
+			);
+			path = "View Controllers ";
+			sourceTree = "<group>";
+		};
+		CFE967622268055100D2C715 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF8A821D226838A900280305 /* Detail Cells */,
+				CFE967632268055500D2C715 /* Home Cell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CFE967632268055500D2C715 /* Home Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CFE967642268058500D2C715 /* highSchoolTVCell.swift */,
+				CFE967652268058500D2C715 /* highSchoolTVCell.xib */,
+			);
+			path = "Home Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +251,8 @@
 				CFE967562267FBE000D2C715 /* LaunchScreen.storyboard in Resources */,
 				CFE967532267FBE000D2C715 /* Assets.xcassets in Resources */,
 				CFE967512267FBDF00D2C715 /* Main.storyboard in Resources */,
+				CF8A8221226838DC00280305 /* HSSATScoresTVCell.xib in Resources */,
+				CFE967672268058500D2C715 /* highSchoolTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +263,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE9674E2267FBDF00D2C715 /* ViewController.swift in Sources */,
+				CF8A821A2268355600280305 /* NYCHighSchoolDetailsVC.swift in Sources */,
+				CF8A821222681E5A00280305 /* BackendAPI.swift in Sources */,
+				CF8A82152268233C00280305 /* NYCHighSchoolsViewModel.swift in Sources */,
+				CF8A820F2268192500280305 /* NYCHighSchools.swift in Sources */,
+				CFE9674E2267FBDF00D2C715 /* NYCHighSchoolVC.swift in Sources */,
+				CFE967662268058500D2C715 /* highSchoolTVCell.swift in Sources */,
 				CFE9674C2267FBDF00D2C715 /* AppDelegate.swift in Sources */,
+				CF8A82182268293100280305 /* Extensions.swift in Sources */,
+				CF8A8220226838DC00280305 /* HSSATScoresTVCell.swift in Sources */,
+				CF8A821C2268357400280305 /* NYCHighSchoolsDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,15 +418,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6352S4H426;
-				INFOPLIST_FILE = "20190417-AfnanMirza-NYCSchools/Info.plist";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/20190417-AfnanMirza-NYCSchools/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.afnanmirza.-0190417-AfnanMirza-NYCSchools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,15 +437,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6352S4H426;
-				INFOPLIST_FILE = "20190417-AfnanMirza-NYCSchools/Info.plist";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/20190417-AfnanMirza-NYCSchools/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.afnanmirza.-0190417-AfnanMirza-NYCSchools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="hsCell" rowHeight="164" id="KGk-i7-Jjw" customClass="highSchoolTVCell" customModule="_0190417_AfnanMirza_NYCSchools" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="158.66666666666666"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLD-7I-X3S">
+                        <rect key="frame" x="20" y="20.000000000000007" width="335" height="118.66666666666669"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFC-8r-Bia">
+                                <rect key="frame" x="15" y="9.9999999999999982" width="305" height="27.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="NPI-WE-WRR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmF-Xl-3Or">
+                                <rect key="frame" x="15" y="52.333333333333329" width="47" height="20.666666666666671"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="Ysd-lb-6Zr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234 Example St, Example City, State 123456" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuZ-j9-NDJ">
+                                <rect key="frame" x="67" y="52.333333333333329" width="258" height="20.666666666666671"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYe-P6-1Ai">
+                                <rect key="frame" x="15.000000000000004" y="88" width="48.333333333333343" height="20.666666666666671"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48.333333333333343" id="ORS-gb-vdR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://example.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdq-qb-PkR">
+                                <rect key="frame" x="68.333333333333329" y="88" width="251.66666666666669" height="20.666666666666671"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xdq-qb-PkR" secondAttribute="trailing" constant="15" id="6UR-NQ-cJw"/>
+                            <constraint firstItem="NuZ-j9-NDJ" firstAttribute="top" secondItem="LFC-8r-Bia" secondAttribute="bottom" constant="15" id="8OY-sH-6XJ"/>
+                            <constraint firstItem="wYe-P6-1Ai" firstAttribute="top" secondItem="xdq-qb-PkR" secondAttribute="top" id="9eB-qv-bVJ"/>
+                            <constraint firstItem="LFC-8r-Bia" firstAttribute="top" secondItem="ZLD-7I-X3S" secondAttribute="top" constant="10" id="DIi-2d-z32"/>
+                            <constraint firstItem="wYe-P6-1Ai" firstAttribute="leading" secondItem="ZLD-7I-X3S" secondAttribute="leading" constant="15" id="Ga9-pC-KlR"/>
+                            <constraint firstItem="wmF-Xl-3Or" firstAttribute="top" secondItem="NuZ-j9-NDJ" secondAttribute="top" id="Nxu-KY-RNj"/>
+                            <constraint firstAttribute="trailing" secondItem="NuZ-j9-NDJ" secondAttribute="trailing" constant="10" id="Ob1-mo-Hs6"/>
+                            <constraint firstAttribute="trailing" secondItem="LFC-8r-Bia" secondAttribute="trailing" constant="15" id="Rl8-Nw-Add"/>
+                            <constraint firstItem="xdq-qb-PkR" firstAttribute="top" secondItem="NuZ-j9-NDJ" secondAttribute="bottom" constant="14.999999999999993" id="Yu7-HY-rJO"/>
+                            <constraint firstItem="xdq-qb-PkR" firstAttribute="leading" secondItem="wYe-P6-1Ai" secondAttribute="trailing" constant="5" id="cuh-dA-W8L"/>
+                            <constraint firstItem="wmF-Xl-3Or" firstAttribute="leading" secondItem="ZLD-7I-X3S" secondAttribute="leading" constant="15" id="dmK-cl-VUf"/>
+                            <constraint firstItem="LFC-8r-Bia" firstAttribute="leading" secondItem="ZLD-7I-X3S" secondAttribute="leading" constant="15" id="f1j-XD-axc"/>
+                            <constraint firstAttribute="bottom" secondItem="xdq-qb-PkR" secondAttribute="bottom" constant="10" id="fW9-jg-mrJ"/>
+                            <constraint firstItem="NuZ-j9-NDJ" firstAttribute="leading" secondItem="wmF-Xl-3Or" secondAttribute="trailing" constant="5" id="hR8-D7-QU1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZLD-7I-X3S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="ZoD-6e-d5E"/>
+                    <constraint firstAttribute="trailing" secondItem="ZLD-7I-X3S" secondAttribute="trailing" constant="20" id="ahD-MU-xqe"/>
+                    <constraint firstAttribute="bottom" secondItem="ZLD-7I-X3S" secondAttribute="bottom" constant="20" id="i7g-Va-CQT"/>
+                    <constraint firstItem="ZLD-7I-X3S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="taB-dx-Y4z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLbl" destination="NuZ-j9-NDJ" id="Dla-hT-rdr"/>
+                <outlet property="cardView" destination="ZLD-7I-X3S" id="vUe-cG-rjD"/>
+                <outlet property="schoolNameLbl" destination="LFC-8r-Bia" id="Foh-cb-knE"/>
+                <outlet property="websiteLbl" destination="xdq-qb-PkR" id="Iac-kr-zZk"/>
+            </connections>
+            <point key="canvasLocation" x="136.80000000000001" y="197.66009852216749"/>
+        </tableViewCell>
+    </objects>
+</document>
